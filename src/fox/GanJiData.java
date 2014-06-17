@@ -60,7 +60,7 @@ public class GanJiData {
 		int namesLenth=view.getNames().length;
 		int firstName=(int) (quot%namesLenth);
 //		System.out.println("firstName is:"+firstName);
-		view.setCalendar(begin, maxDay, currentDay,firstName);
+		view.setCalendar(begin, maxDay, currentDay,firstName+1);
 		view.setYearAndMonth(sdf.format(calendar.getTime()));
 	}
 
