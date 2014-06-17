@@ -9,6 +9,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+/**
+ * 赶集时间显示的主页面
+ * @author admin
+ *
+ */
 public class GanJiFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private GanJiData calendar;
@@ -20,7 +25,7 @@ public class GanJiFrame extends JFrame {
 			new JLabel("二"), new JLabel("三"), new JLabel("四"), new JLabel("五"),
 			new JLabel("六"), };
 	private JLabel[] days = new JLabel[42];
-	
+	/**显示的字段*/
 	private String[] names={"是集会","差四天","差三天","差两天","差一天"};
 	private JLabel[] showNames = new JLabel[42];
 

@@ -1,12 +1,8 @@
 package fox;
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.URL;
-import java.net.URLDecoder;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
@@ -64,7 +60,7 @@ public class GanJiData {
 		int namesLenth=view.getNames().length;
 		int firstName=(int) (quot%namesLenth);
 //		System.out.println("firstName is:"+firstName);
-		view.setCalendar(begin, maxDay, currentDay,firstName+1);
+		view.setCalendar(begin, maxDay, currentDay,firstName);
 		view.setYearAndMonth(sdf.format(calendar.getTime()));
 	}
 
