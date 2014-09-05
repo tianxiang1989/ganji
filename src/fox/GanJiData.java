@@ -51,14 +51,14 @@ public class GanJiData {
 			System.out.println("--updateCalendar whichDay--"+whichDay);
 		}
 		c.set(calendar.get(Calendar.YEAR),
-				calendar.get(Calendar.MONTH), whichDay);
+				calendar.get(Calendar.MONTH), 1);
 		int begin = c.get(Calendar.DAY_OF_WEEK);
 		long quot = 0;
 		quot=c.getTimeInMillis();
 		quot = quot / 1000 / 60 / 60 / 24;
 //		System.out.println("quot is:"+quot);
 		int namesLenth=view.getNames().length;
-		int firstName=(int) (quot%namesLenth);
+		int firstName=(int) (quot%namesLenth)+2;//设置显示的赶集时间的偏移
 //		System.out.println("firstName is:"+firstName);
 		view.setCalendar(begin, maxDay, currentDay,firstName+1);
 		view.setYearAndMonth(sdf.format(calendar.getTime()));
